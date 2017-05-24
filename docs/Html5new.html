@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Html</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+
+<body class="html5">
+	<header class="main-head">
+				<div class="head-line">
+					<div class="head__item head__main"><a href="index.html">Главная</a>
+					</div>
+					<div class="head__item head__css"><a href="css3new.html">CSS</a>
+					</div>
+				</div>
+	</header>
+	<section class="content">
+	  <aside class="nav">
+	    <nav>
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#question-1" class="nav__link js-menu-title">Основы HTML</a>
+					</li>
+					<li class="nav__item">
+						<a href="#question-2" class="nav__link js-menu-title">Форматирование текста</a>
+					</li>
+					<li class="nav__item">
+						<a href="#question-3" class="nav__link js-menu-title">Таблицы</a>
+					</li>
+					<li class="nav__item">
+						<a href="#question-4" class="nav__link js-menu-title">Формы</a>
+					</li>
+					<li class="nav__item">
+						<a href="#question-5" class="nav__link js-menu-title">HTML ссылки</a>
+					</li>
+					<li class="nav__item">
+						<a href="#question-6" class="nav__link js-menu-title">HTML Списки</a>
+					</li>
+					<li class="nav__item">
+						<a href="#question-7" class="nav__link js-menu-title">HTML5 семантические элементы</a>
+					</li>
+					<li class="nav__item">
+						<a href="#question-8" class="nav__link js-menu-title">Проверочная работа</a>
+					</li>
+					<li class="nav__item">
+						<a href="#question-9" class="nav__link js-menu-title">Глоссарий по тегам HTML</a>
+					</li>
+				</ul>
+	    </nav>
+	  </aside>
+	  <section class="content__right">
+					<div class="menu__item menu__item--active">
+						<div class="menu-content js-menu-content" id="question-1"">
+							<div class="menu-content-wrap"><h2>Основы HTML</h2></div>
+							<p>Основы <span class="text-decor">HTML</span> содержат основные правила языка HTML, описание структуры HTML-страницы, отношения в структуре HTML-документа между элементами.</p>
+							<p><span class="text-decor">HTML-документ</span> — это обычный текстовый документ, может быть создан как в обычном текстовом редакторе (Блокнот), так и в специализированном, с подсветкой кода (Notepad++). HTML-документ имеет расширение .html.</p>
+							<p>Язык <span class="text-decor">HTML</span> — язык тегов. Теги описывают структуру HTML-документа. Теги оформляются угловыми скобками &lt;имя тега&gt;, между которыми прописывается имя тега.</p>
+							<p><b>Теги располагаются в HTML</b>-документе в соответствии с правилами разметки (порядок следования, правило вложенности тегов), создавая разделы будущей веб-страницы. Кроме тегов, HTML-документы могут содержать специальные символы.</p>
+							<p>Практически все теги имеют атрибуты (глобальные, применяемые для всех html-элементов, и собственные), указываемые в формате атрибут="значение". Атрибуты позволяют изменять свойства элемента, для которого они заданы. Атрибуты прописываются в начальном теге элемента.</p>
+							<p>Атрибуты <span class="text-decor">class</span> и <span class="text-decor">id</span> применимы ко всем HTML-элементам, за исключением элементов, содержащих техническую информацию — <b>&lt;html&gt;</b>, <b>&lt;head&gt;</b>, <b>&lt;meta&gt;</b>, <b>&lt;title&gt;</b>, <b>&lt;style&gt;</b> и <b>&lt;script&gt;</b>. Каждому элементу можно присвоить несколько значений class и только одно значение id. Множественные значения class записываются через пробел, <b>&lt; div class="nav top" &gt;</b>. Значения class и id должны состоять только из букв, цифр, дефисов и нижних подчеркиваний и должны начинаться только с букв или цифр.</p>
+							<p><b>Большинство тегов</b> — парные, они состоят из начального и закрывающего тегов. Начальный тег показывает, где начинается элемент, закрывающийся — где заканчивается. Закрывающий тег образуется путем добавления слэша / перед именем тега: &lt;имя тега&gt;…<!--имя тега-->. Между начальным и закрывающим тегами находится содержимое тега — контент.</p>
+							<p>Одиночные теги не могут хранить в себе содержимого напрямую, оно прописывается как значение атрибута, например, тег <b>&lt; input type="button" value="Кнопка" &gt;</b> создаст кнопку с текстом Кнопка внутри.</p>
+							<p>Теги могут вкладываться друг в друга, например, <b>&lt;p&gt;&lt;i&gt;</b>Текст<b>&lt;/i&gt;&lt;/p&gt;</b>. При вложении следует соблюдать порядок их закрытия (принцип «матрёшки»), например, следующая запись будет неверной: <b>&lt;p&gt;&lt;</b>i<b>&gt;</b>Текст<b>&lt;/i&gt;&lt;/p&gt;</b>
+							</p><p><span class="text-decor">HTML-документ</span> состоит из двух разделов — заголовка — между тегами &lt;head&gt;…&lt;/head&gt; и содержательной части — между тегами &lt;body&gt;…&lt;/body&gt;. </p>
+							<p><b>1. Структура HTML</b>-документа Язык HTML следует правилам, которые содержатся в файле объявления типа документа (Document Type Definition, или DTD). DTD представляет собой XML-документ, определяющий, какие теги, атрибуты и их значения действительны для конкретного типа HTML. Для каждой версии HTML есть свой DTD. DOCTYPE отвечает за корректное отображение веб-страницы браузером. DOCTYPE определяет не только версию HTML (например, html), но и соответствующий DTD-файл в Интернете.</p>
+							<table class="less__one">
+								<tbody><tr>
+									<td><b>В коде</b></td>
+									<td><b>На сайте</b></td>
+								</tr>
+								<tr>
+									<td>
+										&lt;!DOCTYPE html&gt;<br>
+										&lt;html lang="ru"&gt;<br>
+										&lt;head&gt;<br>
+										&nbsp; &nbsp; &lt;meta charset="UTF-8"&gt;<br>
+										&nbsp; &nbsp;&lt;title&gt;Document&lt;/title&gt;<br>
+										&lt;/head&gt;<br>
+										&lt;body&gt;<br>
+										&nbsp; &nbsp;&lt;h1&gt;;Пример#060&lt;/h1&gt;<br>
+										&lt;/body&gt;<br>
+										&lt;/html&gt;
+									</td>
+									<td><h1>Пример</h1></td>
+								</tr>
+							</tbody></table>
+							<div class="less-one__img-wrap">
+								<img src="img/i.jpg" alt="">
+							</div>
+							<div class="btn-wrap"><a href="lesson1.html" class="btn">Задание</a></div>
+						</div>
+					</div>
+					<div class="menu__item">
+						<div class="menu-content js-menu-content" id="question-2">
+							<div class="menu-content-wrap"><h2>Форматирование текста</h2></div>
+							<p>С помощью тэгов форматирования можно выделять "важный" текст на страницах, создавать тексты "рукописного начертания", добавлять в <b>HTML</b> документы формулы, а также увеличивать и уменьшать размер шрифта.</p>
+							<p><b>К основным способам форматирования текста относятся:</b> </p>
+							<ul>
+								<li>выделение текста жирностью </li>
+								<li>курсивом </li>
+								<li>подчеркиванием </li>
+								<li>изменение шрифта текста  </li>
+							</ul>
+							<p><b>Все эти способы форматирования можно сочетать.</b></p>
+							<div class="html5__table-wrap">
+							<table class="data">
+							<caption>Теги для форматирования текста</caption>
+								<tbody><tr> 
+									<th>Код HTML</th>
+									<th>Описание</th>
+
+									<th>Пример</th>
+								</tr>
+								<tr> 
+									<td class="sel">&lt;b&gt;Текст&lt;/b&gt;</td>
+									<td>Жирное начертание текста</td>
+									<td><b>Текст</b></td>
+
+								</tr>
+								<tr> 
+									<td class="sel">&lt;i&gt;Текст&lt;/i&gt;</td>
+									<td>Курсивное начертание текста</td>
+									<td><i>Текст</i></td>
+								</tr>
+								<tr> 
+									<td class="sel">&lt;sup&gt;Текст&lt;/sup&gt;</td>
+
+									<td>Верхний индекс</td>
+									<td>e=mc<sup>2</sup></td>
+								</tr>
+								<tr> 
+									<td class="sel">&lt;sub&gt;Текст&lt;/sub&gt;</td>
+									<td>Нижний индекс</td>
+
+									<td>H<sub>2</sub>O</td>
+								</tr>
+								<tr> 
+									<td class="sel">&lt;pre&gt;Текст&lt;/pre&gt;</td>
+									<td>Текст пишется как есть, включая все пробелы</td>
+									<td> <pre style="background: none; margin: 0">Текст</pre></td>
+
+								</tr>
+								<tr> 
+									<td class="sel">&lt;em&gt;Текст&lt;/em&gt;</td>
+									<td>Курсивный текст</td>
+									<td><em>Текст</em></td>
+								</tr>
+								<tr> 
+									<td class="sel">&lt;strong&gt;Текст&lt;/strong&gt;</td>
+
+									<td>Жирное начертание текста</td>
+									<td><strong>Текст</strong></td>
+								</tr>
+							</tbody></table>
+							</div>
+							<p>Любые теги форматирования текста можно использовать совместно друг 
+  с другом. Чтобы сделать текст одновременно жирным и курсивным шрифтом 
+  используется сочетание тегов <span class="tag">&lt;b&gt;</span> и <span class="tag">&lt;i&gt;</span> 
+  (пример 1). Их порядок в данном случае не важен.</p>
+
+							<p><b>Пример 1. Жирный курсивный текст</b></p>
+<pre class="less2"><code>&lt;!DOCTYPE&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+  &lt;title&gt;Текст&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;   
+   &lt;p&gt;Он словно вырезан из &lt;b&gt;камня&lt;/b&gt;, стоек и неподвижен в отличие от его противников. 
+   &lt;i&gt;Дух и жизненная сила&lt;/i&gt; в нём достигла &lt;b&gt;&lt;i&gt;совершенства&lt;/i&gt;&lt;/b&gt;. 
+   Но вот беда — никто не смеет принять его вызов.&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+							<p><b>Результат данного примера показан на рис.&nbsp;1.</b></p>
+							<p class="fig"><img src="img/1.png" alt="Вид курсивного жирного начертания текста"></p>
+							<p class="figsign"><b>Рис. 1. Вид курсивного жирного начертания текста</b> </p>
+							<p>Использование тегов <span class="tag">&lt;sup&gt;</span> и <span class="tag">&lt;sub&gt;</span> 
+							  сдвигает текст относительно базовой линии и уменьшает размер шрифта (пример 2). </p>
+							<p><b>Пример 2. Создание нижнего индекса</b></p>
+<pre class="less2">&lt;!DOCTYPE&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+  &lt;title&gt;Текст&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt; 
+  &lt;p&gt;&lt;b&gt;Формула изумруда:&lt;/b&gt;
+  &lt;i&gt;Be&lt;sub&gt;3&lt;/sub&gt;Al&lt;sub&gt;2&lt;/sub&gt;(SiO&lt;sub&gt;3&lt;/sub&gt;)&lt;sub&gt;6&lt;/sub&gt;&lt;/i;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</pre>
+					    <p><b>Результат данного примера показан на рис.&nbsp;2.</b></p>
+					    <p class="fig"><img src="img/2.png" alt="Нижний индекс в тексте"></p>
+					    <div class="btn-wrap"><a href="lesson2.html" class="btn">Задание</a></div>
+						</div>
+					</div>
+
+					<div class="menu__item table">
+						<div class="menu-content js-menu-content" id="question-3">
+							<div class="menu-content-wrap"><h2>Таблицы</h2></div>
+							<p><b>Таблица - один из основных инструментов для создания web-страниц.</b> </p>
+							<p><b>Любая таблица представляет собой набор строк и столбцов, на пересечении которых находятся ячейки. Например:</b></p>
+							<table>
+								<caption>Таблица</caption>
+								<tbody><tr>
+									<th>Столбец 1</th>
+									<th>Столбец 2</th>
+									<th>Столбец 3</th>
+								</tr>
+								<tr>
+									<td>Текст 1</td>
+									<td>Текст 2</td>
+									<td>Текст 3</td>
+								</tr>
+								<tr>
+									<td>Текст 1</td>
+									<td>Текст 2</td>
+									<td>Текст 3</td>
+								</tr>
+								<tr>
+									<td>Текст 1</td>
+									<td>Текст 2</td>
+									<td>Текст 3</td>
+								</tr>
+							</tbody></table>
+							<b>Рассмотрим нашу таблицу с точки зрения HTML:</b>
+							<ul>
+							    <li>  сама таблица задается с помощью тегов <i class="teg">&lt;table&gt;&lt;/table&gt;</i> </li> 
+							    <li>  у таблицы есть название - теги <i class="teg">&lt;caption&gt;&lt;/caption&gt;</i> </li> 
+							    <li> таблица состоит из строк - теги <i class="teg">&lt;tr&gt;&lt;/tr&gt;</i> </li> 
+							    <li> каждая строка состоит из столбцов - теги <i class="teg">&lt;td&gt;&lt;/td&gt;</i> </li> 
+							    <li> столбцы имеют названия, расположенные в первой строке - теги <i class="teg">&lt;th&gt;&lt;/th&gt;</i> </li> 
+							</ul>
+							<div class="img-wrapper">
+								<img src="img/2875_900.png" alt="table">
+							</div>
+							 <div class="btn-wrap"><a href="lesson3.html" class="btn">Задание</a></div>
+						</div>
+					</div>
+					<div class="menu__item">
+						<div class="menu-content js-menu-content" id="question-4">
+							<div class="menu-content-wrap"><h2>Формы</h2></div>
+							<p><b>Html формы</b> являются элементами управления, которые используются для сбора информации от гостей веб-сайта.</p>
+							<p><b>Тег&lt; form&gt;</b> устанавливает форму на веб-странице. Форма предназначена для обмена данными меж пользователем и сервером. Область внедрения форм не ограничена отправкой данных на сервер, с поддержкой клиентских скриптов разрешено заполучить доступ к любому составляющей формы, видоизменять его и использовать по собственному усмотрению.</p>
+							<p><b>Веб-формы</b> состоят из комплекта текстовых полей, клавиш, списков и остальных частей управления, которые активируются щелчком мыши. Технически формы передают данные от юзера удаленному серверу.</p>
+							<p>Для получения и обработки данных форм употребляются языки веб-программирования, такие как php, perl.</p>
+							<p>До появления html5 веб-формы представляли собой комплект нескольких частей<b>&lt; input type= " text "&gt;,&lt; input type= " password "&gt;,</b> завершающихся клавишей<b>&lt; input type= " submit "&gt;.</b> Для стилизации форм в различных браузерах приходилось прилагать много усилий. Кроме такого, формы требовали внедрения javascript для испытания введенных данных, а также были лишены специфичных типов полей ввода для указания повседневной информации типа дат, адресов электронной почты и url-адресов.</p>
+							<p>Html5 формы решили большинство данных распространенных проблем благодаря наличию новейших атрибутов, предоставив возможность видоизменять внешний вид частей форм за счет css3.</p>
+							<table border="1"> 
+							<tbody><tr><td>В коде</td>
+							<td>На сайте</td>
+							</tr><tr>
+								<td> 
+								<br>&lt; form&gt;
+								 <br>&lt;p&gt;Введите имя:&lt;/p&gt;
+								 <br>&lt;input type="text" /p&gt;
+								 <br>&lt;p&gt;Введите пароль: &lt;/p&gt;
+								 <br>&lt;input type="password"  /p&gt;
+								 &lt; /form&gt;
+								</td>   
+							 <td>
+							<form lpformnum="1">
+							<br>Введите ваше имя:
+							<input type="text" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" autocomplete="off">
+							<br>Введите пароль:
+							<input type="password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" autocomplete="off">
+							<p></p>
+							</form> 
+							</td>
+							</tr> 
+							</tbody></table>
+							<p><b>Выпадающий список</b> </p> 
+							<p> Для создания выпадающих списков используется тэг <b>&lt;SELECT&gt;</b>, а элементы выпадающего списка
+							 определяются с помощью тэга <b>&lt;OPTION&gt;</b>  </p>
+
+							<p> <u> Пример</u>: </p> 
+							<p> </p><table> 
+							<tbody><tr><td> <b>HTML-код:</b></td>  <td> <b>Отображение в браузере:</b></td>
+							</tr><tr> <td> 
+							<br>&lt;html&gt;
+							<br>&lt;body&gt;
+							<br> &lt;br&gt; Выберите Ваш пол:
+							<br>&lt;select name='s'&gt;
+							<br>&lt;option value='m'&gt; Мужской &lt;/option&gt;
+							<br>&lt;option value='m'&gt; Женский &lt;/option&gt;
+							<br> &lt;/select&gt;
+							 <br> &lt;/form&gt;
+							 <br>&lt; /body&gt;
+							<br>&lt;/html&gt;
+							</td>   
+							<td>
+
+							<br> Выберите Ваш пол: 
+							<br><br>
+							<form lpformnum="2">
+							<select name="s">
+							<option value="m"> Мужской </option>
+							<option value="f"> Женский </option>
+							</select>
+							</form>
+							
+							
+
+							</td>
+							</tr> 
+							</tbody></table>
+
+
+							<p> С помощью атрибута <b>MULTIPLE </b>можно указать, что в выпадающем списке могут быть выбраны
+							 одновременно несколько элементов.
+							 </p><p><u> Пример</u>: </p> 
+							 <p> </p><table> 
+							<tbody><tr><td><b>HTML-код:</b></td>  <td> <b>Отображение в браузере:</b></td>
+							</tr><tr> <td> 
+							<br>&lt;html&gt;
+							<br>&lt;body&gt;
+							<br> &lt;br&gt; В данном списке может быть одновременно выбрано несколько значений 
+							<br>(для этого зажмите клавишу Ctrl и щелкайте на необходимые элементы):
+							<br>&lt;form&gt;
+							<br>&lt;select name='city' multiple='multiple'&gt;
+							<br>&lt;option value='Dress'&gt;Платье&lt;/option&gt;
+							<br>&lt;option value='Bags'&gt;Сумки&lt;/option&gt;
+							<br>&lt;option value='Shoes'&gt;Туфли&lt;/option&gt;
+							<br>&lt;option value='Accessories'&gt;Аксессуары&lt;/option&gt;
+							<br> &lt;/select&gt;
+							 <br> &lt;/form&gt;
+							 <br>&lt; /body&gt;
+							<br>&lt;/html&gt;
+							</td>   
+							 <td>
+							<p>В данном списке может быть одновременно выбрано несколько значений (для этого зажмите клавишу Ctrl и щелкайте на необходимые элементы): </p>
+							<form lpformnum="3">
+							<select name="city" multiple="multiple">
+							<option value="Dress">Платье</option>
+							<option value="Bags">Сумки</option>
+							<option value="Shoes">Туфли</option>
+							<option value="Accessories">Аксессуары</option>
+							</select>
+							</form>
+							
+							
+
+							</td>
+							</tr> 
+							</tbody></table>
+							<table class="t3">
+								<caption>Таблица 3. Атрибуты тега &lt;input&gt;</caption>
+								<tbody><tr>
+								<th>Атрибут</th>
+								<th>Значение / описание</th>
+								</tr>
+								<tr>
+								<td><kbd>form</kbd></td>
+								<td>Значение атрибута должно быть равно атрибуту <kbd>id</kbd> элемента <kbd>&lt;form&gt;</kbd> в этом же документе. Определяет одну или несколько форм, которым принадлежит данное поле формы.</td>
+								</tr>
+								<tr>
+								
+								<td><kbd>height</kbd></td>
+								<td>Значение атрибута содержит количество пикселей без указания единицы измерения. Устанавливает высоту поля формы типа <kbd>type="image"</kbd>, например,  <kbd>&lt;input type="image" src="img_submit.gif" height="50"&gt;</kbd>. Рекомендуется одновременно устанавливать как высоту, так и ширину поля.</td>
+								</tr>
+								
+								<tr><td><kbd>placeholder</kbd></td>
+								<td>Содержит текст, который отображается в поле ввода до заполнения (чаще всего это подсказка).</td>
+								</tr>
+								<tr>
+								<td><kbd>required</kbd></td>
+								<td>Выводит сообщение о том, что данное поле является обязательным для заполнения. Если пользователь попытается отправить форму, не введя в это поле требуемое значение, то на экране отобразится предупреждающее сообщение. Указывается без значения атрибута.</td>
+								</tr>
+								<tr>
+								<td rowspan="21"><kbd>type</kbd></td>
+								<td><kbd>button</kbd> — создает кнопку.<br>
+								<input type="button" value="Кнопка"></td>
+								</tr>
+								<tr>
+								<td><kbd>checkbox</kbd> — превращает поле ввода во флажок, который можно установить или очистить, например,<br>
+								<input type="checkbox" name="vehicle" value="Автомобиль">У меня есть автомобиль</td>
+								</tr>
+								<tr>
+								<td><kbd>color</kbd> — генерирует палитры цветов в поддерживающих браузерах, давая пользователям возможность выбирать значения цветов в шестнадцатеричном формате.<br>
+								<input type="color" name="color"></td>
+								</tr>
+								<tr>
+								<td><kbd>date</kbd> — позволяет вводить дату в формате дд.мм.гггг.<br>
+								День рождения: <input type="date" name="birthday"></td>
+								</tr>
+								<tr>
+								<td><kbd>datetime-local</kbd> — позволяет вводить дату и время, разделенные прописной английской буквой <kbd>Т</kbd> по шаблону дд.мм.гггг  чч:мм.<br>
+								День рождения — день и время: <input type="datetime-local" name="birthday"></td>
+								</tr>
+								<tr>
+								<td><kbd>email</kbd> — браузеры, поддерживающие данный атрибут, будут ожидать, что пользователь введет данные, соответствующие синтаксису адресов электронной почты.<br>
+								E-mail: <input type="email" name="email"></td>
+								</tr>
+								<tr>
+								<td><kbd>file</kbd> — позволяет загружать файлы с компьютера пользователя.<br>
+								Выберите файл: <input type="file" name="img"></td>
+								</tr>
+								<tr>
+								<td><kbd>hidden</kbd> — скрывает элемент управления, который не отображается браузером и не дает пользователю изменять значения по умолчанию.</td>
+								</tr>
+								<tr>
+								<td><kbd>image</kbd> — создает кнопку, позволяя вместо текста на кнопке вставить изображение.<br>
+								<input type="image" src="https://html5book.ru/wp-content/uploads/2015/04/webbutton.png" alt="Submit"></td>
+								</tr>
+								<tr>
+								<td><kbd>month</kbd> — позволяет пользователю вводить год и номер месяца по шаблону гггг-мм.<br>
+								<input type="month"></td>
+								</tr>
+								<tr>
+								<td><kbd>number</kbd> — предназначено для ввода целочисленных значений. Его атрибуты <kbd>min</kbd>, <kbd>max</kbd> и <kbd>step</kbd> задают верхний, нижний пределы и шаг между значениями соответственно. Эти атрибуты предполагаются у всех элементов, имеющих численные показатели. Их значения по умолчанию зависят от типа элемента.<br>
+								Укажите количество (от 1 до 5): <input type="number" name="quantity" min="1" max="5"></td>
+								</tr>
+								<tr>
+								<td><kbd>password</kbd> — создает текстовые поля в форме, при этом вводимые пользователем символы заменяются на звездочки, маркеры, либо другие, установленные браузером значки.<br>
+								Введите пароль: <input type="password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" autocomplete="off"></td>
+								</tr>
+								<tr>
+								<td><kbd>radio</kbd> — создает переключатель — элемент управления в виде небольшого кружка, который можно включить или выключить.<br>
+								Вегетарианец: <input type="radio"></td>
+								</tr>
+								<tr>
+								<td><kbd>range</kbd> — позволит создать такой элемент интерфейса, как ползунок, min / max — позволят установить диапазон выбора <input type="range" min="1" max="10" value="3"></td>
+								</tr>
+								<tr>
+								<td><kbd>reset</kbd> — создает кнопку, которая очищает поля формы от введенных пользователем данных.<br>
+								<input type="reset"></td>
+								</tr>
+								<tr>
+								<td><kbd>search</kbd> — обозначает поле поиска, по умолчанию поле ввода имеет прямоугольную форму.<br>
+								Поиск: <input type="search" name="search"></td>
+								</tr>
+								<tr>
+								<td><kbd>submit</kbd> — создает стандартную кнопку, активизируемую щелчком мыши. Кнопка собирает информацию с формы и отправляет ее для обработки.<br>
+								<input type="submit" value="Отправить"></td>
+								</tr>
+								<tr>
+								<td><kbd>text</kbd> — создает текстовые поля в форме, выводя однострочное текстовое поле для ввода текста.<br>
+								<input type="text"></td>
+								</tr>
+								<tr>
+								<td><kbd>time</kbd> — позволяет вводить время в 24-часовом формате по шаблону чч:мм. В поддерживающих браузерах оно отображается как элемент управления в виде числового поля ввода со значением, изменяемым с помощью мыши, и допускает ввод только значений времени.<br>
+								Укажите время: <input type="time"></td>
+								</tr>
+								<tr>
+								<td><kbd>url</kbd> — поле предназначено для указания URL-адресов.<br>
+								Главная страница: <input type="url" name="homepage"></td>
+								</tr>
+								<tr>
+								<td><kbd>week</kbd> — соответствующий инструмент-указатель позволяет пользователю выбрать одну неделю в году, после чего обеспечит ввод данных в формате  нн-гггг. В зависимости от года число недель может быть 52 или 53.<br>
+								Укажите неделю: <input type="week"></td>
+								</tr>
+								<tr>
+								<td><kbd>value</kbd></td>
+								<td>Определяет текст, отображаемый на кнопке, в поле или связанный текст. Не указывается для полей типа file.</td>
+								</tr>
+								<tr>
+								<td><kbd>width</kbd></td>
+								<td>Значение атрибута содержит количество пикселей. Позволяет задать ширину полей формы.</td>
+								</tr>
+								</tbody></table>
+							<div class="img-wrapper">
+								<img src="img/form.jpg" alt="form">
+								<img src="img/fieldset.png" alt="">
+							</div>
+							<div class="menu-content-wrap">
+								<h2>Пример</h2>
+							</div>
+							<form class="forms">
+								<div class="form-item form__name">
+									<label for="name">Имя</label>
+									<div class="input-wrap"><input type="text" id="name" placeholder="Имя" required="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" autocomplete="off"></div>
+								</div>
+								<div class="form-item form__last-name">
+									<label for="last-name">Фамилия</label>
+									<div class="input-wrap"><input type="text" id="last-name" placeholder="Фамилия" required=""></div>
+								</div>
+								<div class="form-item form__phone">
+									<label for="phone">Телефон</label>
+									<div class="input-wrap"><input type="text" id="phone" placeholder="Телефон" required=""></div>
+								</div>
+								<div class="form-item form__sub">
+									<button type="submit">Отправить</button>
+								</div>
+							</form>
+							<div class="btn-wrap"><a href="lesson4.html" class="btn">Задание</a></div>
+						</div>
+					</div>
+
+					<div class="menu__item">
+						<div class="menu-content js-menu-content" id="question-5">
+							<div class="menu-content-wrap"><h2>HTML ссылки</h2></div>
+							<div class="img-wrapper"><img src="img/html_links.png" alt="html_links" class="alignleft"></div>
+							<p><b>HTML ссылки</b> создаются с помощью элементов <kbd>&lt;a&gt;</kbd>, <kbd>&lt;area&gt;</kbd> и <kbd>&lt;link&gt;</kbd>. Ссылки представляют собой связь между двумя ресурсами, одним из которых является текущий документ. </p>
+							<p>Ссылки можно поделить на две категории:<br>
+							<b>ссылки на внешние ресурсы</b> — создаются с помощью тега <kbd>&lt;link&gt;</kbd> и используются для расширения возможностей текущего документа при обработке браузером;<br>
+							<b>гиперссылки</b> — ссылки на другие ресурсы, которые пользователь может посетить или загрузить.</p>
+							<h3>Основные атрибуты гиперссылок</h3>
+							<p>В рамках HTML гиперссылки могут иметь следующие параметры:</p>
+							<p>1.title – позволяет создать текст подсказки, которая всплывает при наведении курсора мыши на гиперссылку.</p>
+							<p>2. target – указывает браузеру в каком окне следует открыть ссылку.</p>
+							<ul>
+								<li>_blank – ссылку необходимо открыть в новой вкладке;</li>
+								<li>_self – гиперссылка в HTML должна быть открыта в текущей вкладке. Значение по умолчанию;</li>
+								<li>_parent – браузер должен загрузить ссылку в родительском окне;</li>
+								<li>_top – гиперссылка загружается по всему пространству окна браузера (разбиение на фреймы в данном случае исчезает).</li>
+							</ul>
+							<p>Гиперссылка создается с помощью универсального тэга, &lt;A&gt; и его атрибута href , указывающего, в каком файле хранится загружаемая Web-страница: Наример: &lt;A href ="Адрес"&gt; Указатель ссылки &lt;/A&gt;</p>
+							<p>Если загружаемая в браузер Web-страница размещена на локальном компьютере в той же папке, то вместо адреса указывается просто имя файла. Наример: &lt; href="name.txt"&gt; Указатель ссылки &lt; /A &gt;</p>
+							<p>Если загружаемая в браузер Web-страница размещена в Интернете, то в качестве адреса указывается Интернет-адрес. Наример: &lt; A href="https://www.google.com"&gt; Указатель ссылки &lt;/A&gt;</p>
+							<p>Указатель ссылки мы видим при просмотре Web-страницы в браузере. Указателем ссылки может быть текст или рисунок, обычно выделенный синим цветом и подчеркиванием. При указании на него мышью ее курсор превращается в значок «рука». Щелчок мышью по указателю вызывает переход на Web-страницу, указанную в гиперссылке.</p>
+							<p>Гиперссылки могут содержать адреса не только Web-страниц, но и адреса файлов других типов. Активизация таких гиперссылок будет приводить:</p>
+							<ul>
+								<li>к просмотру изображения в браузере: &lt;А href="picture. jpg"&gt; Изображение &lt;/A &gt;</li>
+								<li>к запуску проигрывателя, встроенного в браузер и воспроизведению звукового файла: &lt;А href="sound.wav" &gt; Звук &lt;/A &gt;</li>
+								<li>к сохранению файла на локальном компьютере, с использованием встроенного в браузер менеджера загрузки файлов: &lt;А href="filez.exe"&gt; Скачать файл &lt;/A &gt;</li>
+							</ul>
+							<div class="btn-wrap"><a href="lesson5.html" class="btn">Задание</a></div>
+						</div>
+					</div>
+
+					<div class="menu__item">
+						<div class="menu-content js-menu-content" id="question-6">
+							<div class="menu-content-wrap"><h2>HTML Списки</h2></div>
+							<p>С помощью списков можно упорядочить однородную информацию на веб-страницах.</p>
+							<p><strong>маркированный список</strong> — <kbd>&lt;ul&gt;</kbd> — каждый элемент списка <kbd>&lt;li&gt;</kbd> отмечается маркером,<br><strong>нумерованный список</strong> — <kbd>&lt;ol&gt;</kbd> — каждый элемент списка <kbd>&lt;li&gt;</kbd> отмечается цифрой,<br><strong>список определений</strong> — <kbd>&lt;dl&gt;</kbd> — состоит из пар термин <kbd>&lt;dt&gt;</kbd> — <kbd>&lt;dd&gt;</kbd> определение.</p>
+							<p>Каждый список представляет собой контейнер, внутри которого располагаются элементы списка или пары термин-определение. Элементы списка ведут себя как блочные элементы, располагаясь друг под другом и занимая всю ширину блока-контейнера. Каждый элемент списка имеет дополнительный блок, расположенный сбоку, который не участвует в компоновке.</p>
+							<ol>
+								<li>
+									<h3>Маркированный список</h3>
+									<p><strong>Маркированный список</strong> представляет собой неупорядоченный список <em>(от англ. Unordered List)</em>. Создаётся с помощью парного тега <kbd>&lt;ul&gt;&lt;/ul&gt;</kbd>. В качестве маркера элемента списка выступает метка, например, закрашенный кружок. </p>
+									<p>Каждый элемент списка создаётся с помощью парного тега <kbd>&lt;li&gt;&lt;/li&gt;</kbd> <em>(от англ. List Item)</em>. </p>
+									<h4>Пример</h4>
+									<ul>
+										<li>Информатика</li>
+										<li>Физика</li>
+										<li>Математика</li>
+										<li>История</li>
+									</ul>
+								</li>
+								<li>
+									<h3>Нумерованный список</h3>
+									<p><strong>Нумерованный список</strong> создаётся с помощью парного тега <kbd>&lt;ol&gt;&lt;/ol&gt;</kbd>. Каждый пункт списка также создаётся с помощью элемента <kbd>&lt;li&gt;</kbd>. Браузер нумерует элементы по порядку автоматически и если удалить один или несколько элементов такого списка, то остальные номера будут автоматически пересчитаны. </p>
+									<p>Для тега <kbd>&lt;li&gt;</kbd> доступен атрибут <kbd>value</kbd>, который позволяет изменить номер по умолчанию для выбранного элемента списка. Например, если для первого пункта списка задать <kbd>&lt;li value="10"&gt;</kbd>, то остальная нумерация будет пересчитана относительно нового значения. </p>
+									<h4>Пример</h4>
+									<ol>
+										<li>Информатика</li>
+										<li>Физика</li>
+										<li>Математика</li>
+										<li>История</li>
+									</ol>
+								</li>
+								<li>
+									<h3>Список определений</h3>
+									<p><strong>Списки определений</strong> создаются с помощью тега <kbd>&lt;dl&gt;&lt;/dl&gt;</kbd>. Для добавления термина применяется тег <kbd>&lt;dt&gt;&lt;/dt&gt;</kbd>, а для вставки определения — тег <kbd>&lt;dd&gt;&lt;/dd&gt;</kbd>.</p>
+									<h4>Пример</h4>
+									<dl>
+									  <dt>Понедельник</dt>
+									    <dd>Информатика</dd>
+									    <dd>История</dd>
+									  <dt>Вторник</dt>
+									    <dd>Физика</dd>
+									    <dd>Математика</dd>
+									    <dd>Математика</dd>
+									    <dd>История</dd>
+									</dl>
+								</li>
+							</ol>
+							<div class="btn-wrap"><a href="lesson6.html" class="btn">Задание</a></div>
+						</div>
+					</div>
+
+					<div class="menu__item">
+						<div class="menu-content js-menu-content" id="question-7">
+							<div class="menu-content-wrap"><h2>HTML5 семантические элементы</h2></div>
+							<div class="img-wrapper"><img src="img/html5-1.png" alt="html_links" class="alignleft"></div>
+							<p><strong>HTML5 семантические элементы</strong> доступно описывают свой смысл или назначение как для браузеров, так и для веб-разработчиков. До появления стандарта HTML5 вся разметка страниц осуществлялась преимущественно с помощью элементов <kbd>&lt;div&gt;</kbd>, которым присваивали классы <kbd>class</kbd> или идентификаторы <kbd>id</kbd> для наглядности разметки (например, <kbd>&lt;div id="header"&gt;</kbd>). С их помощью в HTML-документе размещали верхние и нижние колонтитулы, боковые панели, навигацию и многое другое. </p>
+							<p>Стандарт HTML5 предоставил новые элементы для структурирования, группировки контента и разметки текстового содержимого. Новые семантические элементы позволили улучшить структуру веб-страницы, добавив смысловое значение заключенному в них содержимому (было <kbd>&lt;div id="header"&gt;</kbd>, стало <kbd>&lt;header&gt;</kbd>). Для отображения внешнего вида элементов не задано никаких правил, поэтому элементы можно стилизовать по своему усмотрению.</p>
+							<p>Что такое семантические элементы?</p>
+							<p>Новые семантические элементы HTML5 позволяют улучшить структуру веб-страницы, добавляя смысловое значение заключенному в них содержимому.</p>
+							<ol>
+								<li>
+									<h3>Элемент &lt;header&gt;</h3>
+									<p><b>Категории контента:</b> потоковое содержимое.<br>Группирует вводные и навигационные элементы, не является обязательным. Может содержать заголовки, оборачивать содержание раздела страницы, форму поиска или логотип. В html-документе может содержаться одновременно несколько элементов <kbd>&lt;header&gt;</kbd> и они могут располагаться в любой части страницы.</p>
+								</li>
+								<li>
+									<h3>Элемент &lt;wbr&gt;</h3>
+									<p><b>Категории контента:</b> потоковое содержимое.<br>Группирует вводные и навигационные элементы, не является обязательным. Может содержать заголовки, оборачивать содержание раздела страницы, форму поиска или логотип. В html-документе может содержаться одновременно несколько элементов <kbd>&lt;header&gt;</kbd> и они могут располагаться в любой части страницы.</p>
+								</li>
+								<li>
+									<h3>2. Элемент &lt;nav&gt;</h3>
+									<p><b>Категории контента:</b> потоковое содержимое, текстовое содержимое.<br>
+Отделяет фрагмент текста, который должен быть изолирован от остального текста для двунаправленного форматирования текста. Используется для текстов, написанных одновременно на языках, читающихся слева направо и справа налево.</p>
+								</li>
+								<li>
+									<h3>Элемент &lt;article&gt;</h3>
+									<p><b>Категории контента:</b> потоковое содержимое, секционное содержимое.<br>Используется для группировки записей — публикаций, статей, записей блога, комментариев. Представляет собой независимый обособленный блок, предназначенный для многократного использования, как правило, начинается с заголовка. Может дублироваться на других страницах сайта и содержать внутри другие элементы <kbd>&lt;article&gt;</kbd>, которые по содержанию имеют близкое отношение к содержанию внешней статьи. Если на странице присутствует только одна статья с заголовком и текстовым содержимым, она не нуждается в обёртке элементом <kbd>&lt;article&gt;</kbd>.</p>
+								</li>
+								<li>
+									<h3>Элемент &lt;section&gt;</h3>
+									<p><b>Категории контента:</b> потоковое содержимое, секционное содержимое.<br>Элемент представляет собой универсальный раздел документа. Группирует тематическое содержимое, не используется многократно и обычно содержит заголовок. Не является блоком-оберткой, для этих целей уместнее использовать элемент <kbd>&lt;div&gt;</kbd>. В качестве содержимого может выступать оглавление, разделы научных публикаций, программа мероприятия. Домашняя страница сайта также может быть поделена на секции — блок вводной информации, новости и контакты.</p>
+								</li>
+								<li>
+									<h3>Элемент &lt;aside&gt;</h3>
+									<p><b>Категории контента:</b> потоковое содержимое, секционное содержимое.<br>Группирует содержимое, связанное с окружающим его контентом напрямую, но которое можно счесть отдельным <em>(т.е., удаление этого блока не повлияет на понимание основного содержимого)</em>. Чаще всего элемент позиционируется как боковая колонка (как в книгах) и включает в себя группу элементов: <kbd>&lt;nav&gt;</kbd>, цифровые данные, цитаты, рекламные блоки, архивные записи. Не подходит для блоков, просто позиционированных в стороне.</p>
+								</li>
+								<li>
+									<h3>Элемент &lt;footer&gt;</h3>
+									<p><b>Категории контента:</b> потоковое содержимое.<br>Представляет собой нижний колонтитул содержащей его секции или корневого элемента. Обычно содержит информацию об авторе статьи, данные о копирайте и т.д. Если используется как колонтитул всей страницы, содержимое дополняется сведениями об авторских правах, ссылками на условия использования, контактную информацию, ссылками на связанное содержимое и т.п. </p>
+									<p>В одном веб-документе может быть несколько элементов <kbd>&lt;footer&gt;</kbd>. Как каждая страница, так и каждая статья может иметь свой элемент <kbd>&lt;footer&gt;</kbd>, более того, <kbd>&lt;footer&gt;</kbd> можно поместить в элемент <kbd>&lt;blockquote&gt;</kbd>, чтобы указать источник цитирования.</p>
+								</li>
+								<li>
+									<h3>Элемент &lt;main&gt;</h3>
+									<p><b>Категории контента:</b> потоковое содержимое.<br>Элемент <kbd>&lt;main&gt;</kbd> представляет основное содержимое документа (содержимое элемента <kbd>&lt;body&gt;</kbd>). Контент, находящийся внутри элемента, должен быть уникальным и не повторяться во всех документах сайта, таких как навигационные ссылки, информация о копирайте, логотипы, формы поиска (в случае, если форма поиска является основной функцией документа). </p>
+									<p>Элемент <kbd>&lt;main&gt;</kbd> не может быть потомком таких элементов как <kbd>&lt;article&gt;</kbd>, <kbd>&lt;aside&gt;</kbd>, <kbd>&lt;footer&gt;</kbd>, <kbd>&lt;header&gt;</kbd> или <kbd>&lt;nav&gt;</kbd>.</p>
+								</li>
+							</ol>
+							<h3>В этом списке не все семантические элементы, другие можно посмотреть в справочник по Html5</h3>
+						</div>
+					</div>
+					<div class="menu__item">
+						<div class="kontr menu-content js-menu-content" id="question-8">
+							<div class="menu-content-wrap"><h2>Проверочная работа</h2></div>
+							<p><b>Ответы все в нижнём регистре</b></p>
+							<p><b>Ответы одно слово</b></p>
+							<div class="kontr-wrap">
+								<h3>Вопрос 1</h3>
+								<h4>Что такое тег &lt;a&gt;: </h4>
+								<input type="text" id="kontr1" placeholder="Введите ответ">
+								</div>
+							<div class="kontr-wrap">
+								<h3>Вопрос 2</h3>
+								<h4>Тело документа - это</h4>
+								<input type="text" id="kontr2" placeholder="Введите ответ">
+							</div>
+								<div class="kontr-wrap">
+								<h3>Вопрос 3</h3>
+								<h4>&lt;H1&gt;&lt;/H1&gt; это</h4>
+								<input type="text" id="kontr3" placeholder="Введите ответ">
+							</div>
+							<div class="kontr-wrap">
+								<h3>Вопрос 4</h3>
+								<h4>Чтобы создать столбик в таблице HTML, используют тег</h4>
+								<input type="text" id="kontr4" placeholder="Введите ответ">
+							</div>
+							<div class="kontr-wrap">
+								<h3>Вопрос 5</h3>
+								<h4>Чтобы создать строку в таблице HTML, используют тег</h4>
+								<input type="text" id="kontr5" placeholder="Введите ответ">
+							</div>
+							<div class="kontr-wrap">
+								<h3>Вопрос 6</h3>
+								<h4>С помощью какого тега можно создать нумерованный список</h4>
+								<input type="text" id="kontr6" placeholder="Введите ответ">
+							</div>
+							<div class="kontr-wrap">
+								<h3>Вопрос 7</h3>
+								<h4>С помощью какого тега можно создать форму</h4>
+								<input type="text" id="kontr7" placeholder="Введите ответ">
+							</div>
+							<div class="kontr-wrap">
+								<h3>Вопрос 8</h3>
+								<h4>Какой тег создаёт курсивное начертание текста</h4>
+								<input type="text" id="kontr8" placeholder="Введите ответ">
+							</div>
+							<div class="kontr-wrap">
+								<h3>Вопрос 9</h3>
+								<h4>Какой тег создаёт жирное начертание текста</h4>
+								<input type="text" id="kontr9" placeholder="Введите ответ">
+							</div>
+							<div class="kontr-wrap">
+								<h3>Вопрос 10</h3>
+								<h4>это компонент, который говорит веб браузеру выполнить ту или иную задачу. Например создание абзаца, таблицы, формы</h4>
+								<input type="text" id="kontr10" placeholder="Введите ответ">
+							</div>
+
+							<div class="btn-wrap"><a class="btn footer" onclick="playPuzzle();">Закончить</a></div>
+						</div>
+					</div>
+					<div class="menu__item">
+						<div class="kontr menu-content js-menu-content" id="question-9">
+							<div class="menu-content-wrap"><h2>HTML-элементы</h2></div>
+							<div class="word">
+								<span class="word__less">Цвет = </span>HTML5
+							</div>
+							<table class="t3">
+							<tbody><tr>
+							<th style="width: 20%;">Тег</th>
+							<th>Описание</th>
+							</tr>
+							<tr>
+							<td><kbd>&lt;!--...--&gt;</kbd></td>
+							<td>Используется для добавления комментариев.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;!DOCTYPE&gt;</kbd></td>
+							<td>Объявляет тип&nbsp;документа и предоставляет основную информацию для браузера — его язык и версия.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;a&gt;</kbd></td>
+							<td>Создаёт гипертекстовые ссылки.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;abbr&gt;</kbd></td>
+							<td>Определяет текст как аббревиатуру или акроним. Поясняющий текст задаётся с помощью атрибута <kbd>title</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;address&gt;</kbd></td>
+							<td>Задает контактные данные автора/владельца документа или статьи. Отображается в браузере курсивом.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;area&gt;</kbd></td>
+							<td>Представляет собой гиперссылку с текстом, соответствующей определенной области на карте-изображении или активную область внутри карты-изображения. Всегда вложен внутрь тега <kbd>&lt;map&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;article&gt;</kbd></td>
+							<td>Раздел контента, который образует независимую часть документа или сайта, например, статья в журнале, запись в блоге, комментарий.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;aside&gt;</kbd></td>
+							<td>Представляет контент страницы, который имеет косвенное отношение к основному контенту страницы/сайта.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;audio&gt;</kbd></td>
+							<td>Загружает звуковой контент на веб-страницу.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;b&gt;</kbd></td>
+							<td>Задает полужирное начертание отрывка текста, не придавая акцент или важность выделенному.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;base&gt;</kbd></td>
+							<td>Задает базовый адрес (URL), относительно которого вычисляются все относительные адреса. Это поможет избежать проблем при переносе страницы в другое место, так как все ссылки будут работать, как и прежде.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;bdi&gt;</kbd></td>
+							<td>Изолирует отрывок текста, написанный на языке, в котором чтение текста происходит справа налево, от остального текста.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;bdo&gt;</kbd></td>
+							<td>Отображает текст в направлении, указанном в атрибуте <kbd>dir</kbd>, переопределяя текущее направление написания текста.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;blockquote&gt;</kbd></td>
+							<td>Выделяет текст как цитату, применяется для описания больших цитат.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;body&gt;</kbd></td>
+							<td>Представляет тело документа (содержимое, не относящееся к метаданным документа).</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;br&gt;</kbd></td>
+							<td>Перенос текста на новую строку.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;button&gt;</kbd></td>
+							<td>Создает интерактивную кнопку. Внутрь тега можно поместить содержимое — текст или изображение.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;canvas&gt;</kbd></td>
+							<td>Холст-контейнер для динамического отображения изображений, таких как простые изображения, диаграммы, графики и т.п. Для рисования используется скриптовый язык JavaScript.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;caption&gt;</kbd></td>
+							<td>Добавляет подпись к таблице. Вставляется сразу после тега <kbd>&lt;table&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;cite&gt;</kbd></td>
+							<td>Используется для указания источника цитирования. Отображается курсивом.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;code&gt;</kbd></td>
+							<td>Представляет фрагмент программного кода, отображается шрифтом семейства <kbd>monospace</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;col&gt;</kbd></td>
+							<td>Выбирает для форматирования один или несколько столбцов таблицы, не содержащих информацию одного типа.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;colgroup&gt;</kbd></td>
+							<td>Создает структурную группу столбцов, выделяющую множество логически однородных ячеек.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;datalist&gt;</kbd></td>
+							<td>Элемент-контейнер для выпадающего списка элемента <kbd>&lt;input&gt;</kbd>. Варианты значений помещаются в элементы&nbsp;<kbd>&lt;option&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;dd&gt;</kbd></td>
+							<td>Используется для описания термина из тега <kbd>&lt;dt&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;del&gt;</kbd></td>
+							<td>Помечает текст как удаленный, перечёркивая его.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;details&gt;</kbd></td>
+							<td>Создаёт интерактивный виджет, который пользователь может открыть или закрыть. Представляет собой контейнер для контента, видимый заголовок виджета помещается в тег <kbd>&lt;summary&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;dfn&gt;</kbd></td>
+							<td>Определяет слово как термин, выделяя его курсивом. Текст, идущий следом, должен содержать расшифровку этого термина.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;div&gt;</kbd></td>
+							<td>Тег-контейнер для разделов&nbsp;HTML-документа. Используется для группировки блочных элементов с целью форматирования стилями.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;dl&gt;</kbd></td>
+							<td>Тег-контейнер, внутри которого находятся термин и его описание.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;dt&gt;</kbd></td>
+							<td>Используется для задания термина.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;em&gt;</kbd></td>
+							<td>Выделяет важные фрагменты текста, отображая их курсивом.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;embed&gt;</kbd></td>
+							<td>Тег-контейнер для встраивания внешнего интерактивного контента или плагина.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;fieldset&gt;</kbd></td>
+							<td>Группирует связанные элементы в форме, рисуя рамку вокруг них.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;figcaption&gt;</kbd></td>
+							<td>Заголовок/подпись для элемента <kbd>&lt;figure&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;figure&gt;</kbd></td>
+							<td>Самодостаточный тег-контейнер для такого контента как иллюстрации, диаграммы, фотографии, примеры кода, обычно с подписью.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;footer&gt;</kbd></td>
+							<td>Определяет завершающую область (нижний колонтитул) документа или раздела.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;form&gt;</kbd></td>
+							<td>Форма для сбора и отправки на сервер информации от пользователей. Не работает без атрибута <kbd>action</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;h1-h6&gt;</kbd></td>
+							<td>Создают заголовки шести уровней для связанных с ними разделов.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;head&gt;</kbd></td>
+							<td>Элемент-контейнер для метаданных HTML-документа, таких как<kbd>&lt;title&gt;</kbd>, <kbd>&lt;meta&gt;</kbd>, <kbd>&lt;script&gt;</kbd>, <kbd>&lt;link&gt;</kbd>, <kbd>&lt;style&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;header&gt;</kbd></td>
+							<td>Секция&nbsp;для вводной информации сайта или группы навигационных ссылок. Может содержать один или несколько заголовков, логотип, информацию об авторе.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;hr&gt;</kbd></td>
+							<td>Горизонтальная линия для тематического разделения параграфов.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;html&gt;</kbd></td>
+							<td>Корневой элемент HTML-документа. Сообщает браузеру, что это HTML-документ. Является контейнером для всех остальных html-элементов.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;i&gt;</kbd></td>
+							<td>Выделяет отрывок текста курсивом, не придавая ему дополнительный акцент.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;iframe&gt;</kbd></td>
+							<td>Создает встроенный фрейм, загружая в текущий HTML-документ другой документ.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;img&gt;</kbd></td>
+							<td>Встраивает изображения в HTML-документ с помощью атрибута <kbd>src</kbd>, значением которого является адрес встраиваемого изображения.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;input&gt;</kbd></td>
+							<td>Создает многофункциональные поля формы, в которые пользователь может вводить данные.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;ins&gt;</kbd></td>
+							<td>Выделяет текст подчеркиванием. Применяется для выделения изменений, вносимых в документ.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;kbd&gt;</kbd></td>
+							<td>Выделяет текст, который должен быть введён пользователем с клавиатуры, шрифтом семейства monospace.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;keygen&gt;</kbd></td>
+							<td>Генерирует пару ключей — закрытый и открытый. При отправке формы, закрытый ключ хранится локально, и открытый ключ отправляется на сервер. Работает внутри тега <kbd>&lt;form&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;label&gt;</kbd></td>
+							<td>Добавляет текстовую метку для элемента <kbd>&lt;input&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;legend&gt;</kbd></td>
+							<td>Заголовок элементов формы, сгруппированных с помощью элемента <kbd>&lt;fieldset&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;li&gt;</kbd></td>
+							<td>Элемент маркированного или нумерованного списка.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;link&gt;</kbd></td>
+							<td>Определяет отношения между документом и внешним ресурсом. Также используется для подключения внешних таблиц стилей.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;main&gt;</kbd></td>
+							<td>Контейнер для основного уникального содержимого документа. На одной странице должно быть не более одного элемента <kbd>&lt;main&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;map&gt;</kbd></td>
+							<td>Создаёт активные области на карте-изображении. Является контейнером для элементов <kbd>&lt;area&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;mark&gt;</kbd></td>
+							<td>Выделяет фрагменты текста, помечая их желтым фоном.</td>
+							</tr>
+
+							<tr>
+							<td><kbd>&lt;meta&gt;</kbd></td>
+							<td>Используется для хранения дополнительной информации о странице. Эту информацию используют браузеры для обработки страницы, а поисковые системы — для ее индексации. В блоке <kbd>&lt;head&gt;</kbd> может быть несколько тегов <kbd>&lt;meta&gt;</kbd>, так как в зависимости от используемых атрибутов они несут разную информацию.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;meter&gt;</kbd></td>
+							<td>Индикатор&nbsp;измерения в заданном диапазоне.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;nav&gt;</kbd></td>
+							<td>Раздел документа, содержащий навигационные ссылки по сайту.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;noscript&gt;</kbd></td>
+							<td>Определяет секцию, не поддерживающую сценарий (скрипт).</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;object&gt;</kbd></td>
+							<td>Контейнер для встраивания мультимедиа (например, аудио, видео, Java-апплеты, ActiveX, PDF и Flash). Также можно вставить другую веб-страницу в текущий HTML-документ. Для передачи параметров встраиваемого плагина используется тег <kbd>&lt;param&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;ol&gt;</kbd></td>
+							<td>Упорядоченный нумерованный список. Нумерация может быть числовая или алфавитная.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;optgroup&gt;</kbd></td>
+							<td>Контейнер с заголовком для группы элементов <kbd>&lt;option&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;option&gt;</kbd></td>
+							<td>Определяет вариант/опцию для выбора в раскрывающемся списке <kbd>&lt;select&gt;</kbd>, <kbd>&lt;optgroup&gt;</kbd> или <kbd>&lt;datalist&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;output&gt;</kbd></td>
+							<td>Поле для вывода&nbsp;результата вычисления, рассчитанного с помощью скрипта.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;p&gt;</kbd></td>
+							<td>Параграфы в тексте.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;param&gt;</kbd></td>
+							<td>Определяет параметры для плагинов, встраиваемых с помощью элемента <kbd>&lt;object&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;pre&gt;</kbd></td>
+							<td>Выводит текст без форматирования, с сохранением пробелов и переносов текста. Может быть использован для отображения компьютерного кода, сообщения электронной почты и т.д.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;progress&gt;</kbd></td>
+							<td>Индикатор&nbsp;выполнения задачи любого рода.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;q&gt;</kbd></td>
+							<td>Определяет краткую цитату.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;ruby&gt;</kbd></td>
+							<td>Контейнер для&nbsp;Восточно-Азиатских символов и их расшифровки.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;rb&gt;</kbd></td>
+							<td>Определяет вложенный в него текст как базовый компонент аннотации.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;rt&gt;</kbd></td>
+							<td>Добавляет краткую характеристику сверху или снизу от символов, заключенных в элементе <kbd>&lt;ruby&gt;</kbd>, выводится уменьшенным шрифтом.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;rtc&gt;</kbd></td>
+							<td>Отмечает вложенный в него текст как дополнительную аннотацию.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;rp&gt;</kbd></td>
+							<td>Выводит альтернативный текст в случае если браузер не поддерживает элемент &lt;ruby&gt;.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;s&gt;</kbd></td>
+							<td>Отображает текст, не являющийся актуальным, перечеркнутым.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;samp&gt;</kbd></td>
+							<td>Используется для вывода текста, представляющего результат выполнения программного кода или скрипта, а также системные сообщения. Отображается моноширинным шрифтом.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;script&gt;</kbd></td>
+							<td>Используется для определения сценария на стороне клиента (обычно JavaScript). Содержит либо текст скрипта, либо указывает на внешний файл сценария с помощью атрибута <kbd>src</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;section&gt;</kbd></td>
+							<td>Определяет логическую область (раздел) страницы, обычно с заголовком.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;select&gt;</kbd></td>
+							<td>Элемент управления, позволяющий выбирать значения из предложенного множества. Варианты значений помещаются в&nbsp;<kbd>&lt;option&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;small&gt;</kbd></td>
+							<td>Отображает текст шрифтом меньшего размера.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;source&gt;</kbd></td>
+							<td>Указывает местоположение и тип альтернативных медиа ресурсов для элементов <kbd>&lt;video&gt;</kbd> и <kbd>&lt;audio&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;span&gt;</kbd></td>
+							<td>Контейнер для строчных элементов. Можно использовать для форматирования отрывков текста, например, выделения цветом отдельных слов.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;strong&gt;</kbd></td>
+							<td>Расставляет акценты в тексте, выделяя полужирным.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;style&gt;</kbd></td>
+							<td>Подключает встраиваемые таблицы стилей.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;sub&gt;</kbd></td>
+							<td>Задает подстрочное написание символов, например, индекса элемента в химических формулах.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;summary&gt;</kbd></td>
+							<td>Создаёт видимый заголовок для тега <kbd>&lt;details&gt;</kbd>. Отображается с закрашенным треугольником, кликнув по которому можно просмотреть подробности заголовка.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;sup&gt;</kbd></td>
+							<td>Задает надстрочное написание символов.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;table&gt;</kbd></td>
+							<td>Тег для создания таблицы.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;tbody&gt;</kbd></td>
+							<td>Определяет тело таблицы.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;td&gt;</kbd></td>
+							<td>Создает ячейку таблицы.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;textarea&gt;</kbd></td>
+							<td>Создает большие поля для ввода текста.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;tfoot&gt;</kbd></td>
+							<td>Определяет нижний колонтитул таблицы.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;th&gt;</kbd></td>
+							<td>Создает заголовок ячейки таблицы.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;thead&gt;</kbd></td>
+							<td>Определяет заголовок таблицы.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;time&gt;</kbd></td>
+							<td>Определяет дату/время.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;title&gt;</kbd></td>
+							<td>Заголовок HTML-документа, отображаемый в верхней части строки заголовка браузера. Также может отображаться в результатах поиска, поэтому это следует принимать во внимание предоставление названия.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;tr&gt;</kbd></td>
+							<td>Создает строку таблицы.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;track&gt;</kbd></td>
+							<td>Добавляет субтитры для элементов <kbd>&lt;audio&gt;</kbd> и <kbd>&lt;video&gt;</kbd>.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;u&gt;</kbd></td>
+							<td>Выделяет отрывок текста подчёркиванием, без дополнительного акцента.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;ul&gt;</kbd></td>
+							<td>Создает маркированный список.</td>
+							</tr>
+							<tr>
+							<td><kbd>&lt;var&gt;</kbd></td>
+							<td>Выделяет переменные из программ, отображая их курсивом.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;video&gt;</kbd></td>
+							<td>Добавляет на страницу видео-файлы. Поддерживает 3 видео формата: MP4, WebM, Ogg.</td>
+							</tr>
+							<tr>
+							<td><kbd style="color: #38bac7;">&lt;wbr&gt;</kbd></td>
+							<td>Указывает браузеру возможное место разрыва длинной строки.</td>
+							</tr>
+							</tbody></table>
+						</div>
+	  </section>
+	</section>
+
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Задание по HTML формам</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+
+<body>
+	<header class="main-head less_1">
+		<div class="container">
+			<div class="row">
+				<div class="head-line">
+					<div class="head__item head__main"><a href="Html5new.html">Назад</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="lesson-four">
+		<div class="container">
+			<div class="row">
+				<div class="lesson-six__content">
+				  <h1 class="lesson-six__title">Тема: Формы</h1>
+				  <p class="lesson-six__desc"><b>Самостоятельное задание.</b></p>
+				<ol >
+					 <li>Создайте форму с выпадающим списком животных: лев, ягуар, кот.</li>
+						<li> Создайте список с единственным выбором с помощью тега SELECT. </li>
+					 Как это будет выглядеть в браузере:
+					 <select name=day size=1>
+					<option value=1>Понедельник</option>
+					<option value=2>Вторник</option>
+					<option value=3 selected>Среда</option>
+					<option value=4>Четверг</option>
+					<option value=5>Пятница</option>
+					<option value=6>Суббота</option>
+					<option value=7>Воскресенье</option>
+					</select>
+					 
+					 
+					<li> Создайте список множественного выбора с помощью тега SELECT с атрибутом MULTIPLE.</li>
+					 <p>Как это будет выглядеть в браузере:</p>
+					 <select name=day size=7 multiple>
+					<option value=1>Понедельник</option>
+					<option value=1>Вторник</option>
+					<option value=1>Среда</option>
+					<option value=1>Четверг</option>
+					<option value=1>Пятница</option>
+					<option value=1>Суббота</option>
+					<option value=1>Воскресенье</option>
+					</select>
+					 
+					<li>Напишите HTML-код данного однострочного текстового поля.</li>
+
+					<form action=mail.php>
+						Введите имя:
+					<input type=text maxlength=25 size=20>
+					<input type=submit value=OK>
+					</form>
+
+					<li> Приведите пример независимых переключателей. Написать HTML-код приведенного примера. </li> 
+					 
+					 <li> Написать HTML-код.</li>
+					 <form class="less4"> <br>
+							<fieldset>
+									<legend>Ваш комментарий</legend>
+									<table >
+											<tr><td>Имя:</td><td><input "></td></tr>
+											<tr><td>E-mail:</td><td><input "></td></tr>
+											<tr><td colspan="2">Комментарий:<br>
+															<textarea  "></textarea></td></tr>
+											<tr><td colspan="2">
+															<input value="ОТПРАВИТЬ" type="submit"></td></tr>
+									</table>
+							</fieldset>
+					</form>
+			</div>
+		</div>
+		</div>
+	</div>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+</body>
+
+</html>
